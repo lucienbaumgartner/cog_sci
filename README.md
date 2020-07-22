@@ -66,7 +66,7 @@ alternative hypothesis: true location shift is greater than 0
 The results show that H0 cannot be rejected and TPC > TNC is not supported. We thus reject H1.
 
 ### H_aux1
-In the one sample t-test for H_aux1 we specify the alternative hypothesis such that we expect the true mean of the cancellability ratings of the SE group to be above the midpoint (>5).
+In the one sample t-test for H_aux1 we specify the alternative hypothesis such that we expect the true mean of the cancellability ratings of the SE group to be above the midpoint (>5). H0 is always that the difference in the group mean and the midpoint is euqual to 0.
 
 ```
 data:  df$value[df$group == "SE"]
