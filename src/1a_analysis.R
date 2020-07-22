@@ -4,6 +4,7 @@ library(stringr)
 library(quanteda)
 library(ggplot2)
 library(lawstat)
+library(stargazer)
 rm(list=ls())
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
@@ -99,6 +100,7 @@ levene.test(df_ALT$value, df_ALT$group, location = 'mean', trim.alpha=0.25, corr
 lapply(unique(df$group), function(x){shapiro.test(df$value[df$group==x])}) %>% setNames(., unique(df$group))
 lapply(unique(df_ALT$group), function(x){shapiro.test(df_ALT$value[df_ALT$group==x])}) %>% setNames(., unique(df_ALT$group))
 # global
+shapiro.test(df$value)
 shapiro.test(df_ALT$value)
 # conclusion: non-parametric tests advised
 
@@ -117,4 +119,7 @@ wilcox.test(df$value[df$group == 'positive'], df$value[df$group == 'negative'], 
 # between CI and SE alone
 # alternative: mean difference is less than zero (contradiction rating for CI < SE)
 wilcox.test(df$value[df$group == 'CI'], df$value[df$group == 'SE'], alternative = 'less')
-
+# semantic entailment, for which average cancellability ratings should be significantly above the midpoint
+t.test(df$value[df$group == 'SE'], alternative = "greater", mu = median(1:9))
+# conversational implicatures, for which average cancellability ratings should be significantly below the midpoint
+t.test(df$value[df$group == 'SE'], alternative = "less", mu = median(1:9))
