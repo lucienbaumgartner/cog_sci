@@ -2,8 +2,8 @@
 
 ## Hypotheses
 - H1: There is a significant difference between TNC (thick negative concepts) and TPC (thick positive concepts), such that Contradiction ratings are higher for TNC than for TPC.
-- H_aux1: Semantic entailment, for which average cancellability ratings should be significantly above the midpoint.
-- H_aux2: Conversational implicatures, for which average cancellability ratings should be significantly below the midpoint
+- H_aux1: Semantic entailment (SE), for which average cancellability ratings should be significantly above the midpoint.
+- H_aux2: Conversational implicatures (CI), for which average cancellability ratings should be significantly below the midpoint
 
 **H1 has to be rejected. H_aux1 cannot be rejected. H_aux2 has to be rejected.**
 
