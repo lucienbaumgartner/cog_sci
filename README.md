@@ -5,7 +5,7 @@
 - H_aux1: Semantic entailment, for which average cancellability ratings should be significantly above the midpoint.
 - H_aux2: Conversational implicatures, for which average cancellability ratings should be significantly below the midpoint
 
-**H1 has to be rejected. H_aux1 cannot be rejected. H_aux2 has to be rejected. However, CI and SE have significantly different avg cancellability ratings.**
+**H1 has to be rejected. H_aux1 cannot be rejected. H_aux2 has to be rejected.**
 
 ## Data Distribution
 These are the distributions of cancellability ratings per item:
@@ -96,3 +96,6 @@ mean of x
 ```
 
 We see that we cannot reject H0, i.e. that the true mean is significantly different from them midpoint. Consequently, the alternative hypothesis has to be rejected.
+
+## tldr;
+**H1 has to be rejected. H_aux1 cannot be rejected. H_aux2 has to be rejected.**
