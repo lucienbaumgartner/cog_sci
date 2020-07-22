@@ -1,5 +1,7 @@
 # Analysis 1a
 
+All the code is in `src/1a_analysis.R`.
+
 ## Hypotheses
 - H1: There is a significant difference between TNC (thick negative concepts) and TPC (thick positive concepts), such that Contradiction ratings are higher for TNC than for TPC.
 - H_aux1: Semantic entailment (SE), for which average cancellability ratings should be significantly above the midpoint.
@@ -35,6 +37,8 @@ This means that the cancellability ratings are not normally distributed. The sam
 **Since both ANOVA assumptions are violated, we will use non-parametric alternatives.**
 
 ## Hypothesis testing
+**Disclaimer: We also used a subsample without outliers, but the results did not significantly change.**
+
 As an alternative to our 1x4 global ANOVA, we use a Kruskal-Wallis rank sum test.
 
 `Kruskal-Wallis chi-squared = 112.69, df = 3, p-value < 2.2e-16`
