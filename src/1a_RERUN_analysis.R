@@ -5,12 +5,18 @@ library(quanteda)
 library(ggplot2)
 library(lawstat)
 library(stargazer)
+library(permuco)
+#library(tidyr)
+#library(emmeans)
+library(lmerTest)
+library(easystats)
 rm(list=ls())
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 getwd()
 
 load('../res/sentiWords-db.RDS')
+abbrv <- function(x, width = 200) lapply(strwrap(x, width, simplify = FALSE), paste, collapse="\n")
 
 ## import data
 df <- read.csv('../input/TC+Cognition+Exp+1a_Re-Run+Within_August+6,+2020_10.09.csv', stringsAsFactors = F)
@@ -19,8 +25,14 @@ df <- as_tibble(df)
 names(df)
 
 ## clean and format data
-df <- df[,grepl('Eval', names(df), perl = T)]
 df <- mutate(df, id = 1:nrow(df))
+dfx <- df[,grepl('^FL_4', names(df), perl = T)]
+dfx_grid <- df[,grepl('^id$|^FL_1', names(df))]
+dfx_grid <- melt(dfx_grid, id.vars = 'id', variable.name = 'item', value.name = 'item_name')
+dfx_grid <- mutate(dfx_grid, item = gsub('\\_DO', '', item))
+df <- df[,grepl('Eval|^id$', names(df), perl = T)]
+dfx <- mutate(dfx, id = 1:nrow(dfx))
+dfx <- melt(dfx, id.vars = 'id', value.name = 'item_order')
 df <- melt(df, id.vars = 'id', variable.name = 'item')
 df <- mutate(df, value = as.numeric(value))
 df <- mutate(df, item = gsub('Eval', '', item))
@@ -37,6 +49,26 @@ toks <- tibble(item = unlist(toks), polarity = unlist(annot))
 df <- mutate(df, item = tolower(gsub('^SE(\\.)?|^CI', '', item, perl = T)))
 table(df$item)
 df <- left_join(df, toks)
+dfx <- filter(dfx, !item_order=='')
+dfx <- select(dfx, -variable)
+df <- left_join(df, dfx)
+#df <- select(df, - annot, - id)
+dfx <- str_split(df$item_order, '\\|') %>% 
+  do.call(rbind, .) %>%
+  as_tibble %>% 
+  mutate(id = df$id) %>% 
+  filter(!duplicated(id)) %>% 
+  melt(., id.vars = 'id', value.name = 'item', variable.name = 'item_step') %>% 
+  as_tibble %>% 
+  left_join(., dfx_grid) %>% 
+  arrange(id) %>% 
+  select(-item) %>% 
+  rename(item = item_name) %>% 
+  mutate(group = str_extract(item, '^CI|^SE|^ATT|^BEH'),
+         item = tolower(gsub('^CI|^SE|^ATT|^BEH', '', item, perl =T)))
+df <- left_join(df, dfx) %>% arrange(id)
+table(table(df$id)==6)
+df <- mutate(df, item_step = as.numeric(gsub('V', '', item_step)))
 #df <- mutate(df, group = ifelse(is.na(group), annot, group))
 #df <- select(df, - annot, - id)
 check <- df %>% group_by(item, group) %>% summarise(n=n()) %>% arrange(group, item)
@@ -61,9 +93,10 @@ p <- ggplot(df, aes(x = item, y = value, fill = polarity)) +
   labs(
     y = 'Contradiction Rating',
     x = 'Item',
-    fill = 'Group',
-    colour = 'Group',
-    title = '1.a) Distribution of Contradiction Ratings per Item'
+    fill = 'Polarity',
+    colour = 'Polarity',
+    title = '1.a) Distribution of Contradiction Ratings per Item',
+    subtitle = abbrv('The distributions are futher divided by sentiment polarity of the TC (<NA> for CI and SE) and the item group (ATT, BEH, CI, SE).')
   ) +
   theme(
     plot.title = element_text(face = 'bold'),
@@ -72,29 +105,31 @@ p <- ggplot(df, aes(x = item, y = value, fill = polarity)) +
 p
 ggsave(p, filename = '../output/plots/1a_RERUN_boxplot_item.png', width = 11, height = 6)
 
-
-means <- df %>% group_by(group) %>% summarise(avg = mean(value, na.rm = T))
-p <- ggplot(df, aes(x = group, y = value, fill = group)) +
-  geom_boxplot() +
-  geom_point(data = means, aes(y = avg, colour = group)) +
+df_aggr <- df %>% mutate(group = ifelse(group %in% c('ATT', 'BEH'), 'TC', as.character(group)))
+means <- df_aggr %>% mutate(group = ifelse(group %in% c('ATT', 'BEH'), 'TC', as.character(group))) %>% group_by(group, polarity) %>% summarise(avg = mean(value, na.rm = T))
+p <- ggplot(df_aggr, aes(x = group, y = value)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_point(data = means, aes(y = avg)) +
   geom_point(data = means, aes(y = avg), shape = 1) +
+  facet_wrap(~ polarity, scales = 'free_x') +
   labs(
     y = 'Contradiction Rating',
     x = 'Item',
     fill = 'Group',
     colour = 'Group',
-    title = '1.a) Distribution of Contradiction Ratings per Group'
+    title = abbrv('1.a) Distribution of Contradiction Ratings per Group and Polarity')
   ) +
   theme(
     plot.title = element_text(face = 'bold'),
     axis.text.x = element_text(angle = 45, hjust = 1)
   )
 p
-ggsave(p, filename = '../output/plots/1a_boxplot_group.png', width = 6, height = 6)
+ggsave(p, filename = '../output/plots/1a_RERUN_boxplot_group.png', width = 6, height = 6)
 
 
 ## create alternative sample with removed outliers
 outliers <- boxplot(df$value, plot=FALSE)$out
+outliers
 # no outliers
 ## test ANOVA assumptions
 # homogeneity of variances
@@ -106,29 +141,72 @@ lapply(unique(df$group), function(x){shapiro.test(df$value[df$group==x])}) %>% s
 shapiro.test(df$value)
 # conclusion: non-parametric tests advised
 
-## Kruskall-Wallis Test (global ANOVA pendant)
-kruskal.test(value ~ group, data = df)
-kruskal.test(value ~ group, data = df_ALT)
-# there are significant group differences, globally
-
+### H1_ATT & H1_BEH
 ## Planned Contrasts using Pairwise Wilcoxon Rank Sum Tests
 # global version
-att <- filter(df, !group == 'BEH') %>% mutate(.group = ifelse(group == 'ATT', as.character(polarity), as.character(group)))
-att <- arrange(att, id, .group) %>% mutate(id = ordered(id))
-beh <- filter(df, !group == 'ATT') %>% mutate(.group = ifelse(group == 'BEH', as.character(polarity), as.character(group)))
-beh <- arrange(beh, id, .group) %>% mutate(id = ordered(id))
+# create subset only containing BEH and ATT data
+dfsub <- filter(df, group %in% c('BEH', 'ATT')) %>% mutate(id = factor(id), item_step = factor(item_step))
+fit_att <- lmer(value ~ group*polarity + (1|id) + (1|item_step), data=dfsub)
+summary(fit_att)
+anova(fit_att)
+emmeans(fit_att, specs = pairwise ~ polarity, at = list(.group = c("positive", "negative")), by = 'group')
+# pooled data
+fit_att <- lmer(value ~ polarity + (1|id) + (1|item_step), data=dfsub)
+anova(fit_att)
+emmeans(fit_att, specs = pairwise ~ polarity, at = list(.group = c("positive", "negative")))
+
+
+### H_aux1 & H_aux2
+# alternative: mean difference is less than zero (contradiction rating for CI < SE)
+df_factor <- df %>% mutate(id = factor(id), item_step = factor(item_step))
+fit <- lmer(value ~ group + (1|id) + (1|item_step), data=df_factor %>% filter(group %in% c('CI', 'SE')))
+anova(fit)
+emmeans(fit, specs = ~ group, at = list(group = c("CI", "SE")))
+
+
+
+
+
+
+
+
+
+
+
+wilcox.test(df$value[df$group == 'CI'], df$value[df$group == 'SE'], alternative = 'less', paired = T, p.adjust.method = "BH")
+# semantic entailment, for which average cancellability ratings should be significantly above the midpoint
+t.test(df$value[df$group == 'SE'], alternative = "greater", mu = median(1:9), paired = TRUE)
+# conversational implicatures, for which average cancellability ratings should be significantly below the midpoint
+t.test(df$value[df$group == 'CI'], alternative = "less", mu = median(1:9), paired = TRUE)
+
+
+
+
+
+att <- filter(df, !group == 'BEH') %>%  
+  mutate(.group = ifelse(group == 'ATT', as.character(polarity), as.character(group)),
+         id = factor(id))
+beh <- filter(df, !group == 'ATT') %>%  
+  mutate(.group = ifelse(group == 'BEH', as.character(polarity), as.character(group)),
+         id = factor(id))
 # ATT
-pairwise.wilcox.test(att$value, att$.group, p.adjust.method = "BH", paired = T)
+pairwise.wilcox.test(att$value, att$.group, paired = T, p.adjust.method = "BH")
 # BEH
-pairwise.wilcox.test(beh$value, beh$.group, p.adjust.method = "BH", paired = T)
+pairwise.wilcox.test(beh$value, beh$.group, paired = T, p.adjust.method = "BH")
 
 # between positive and negative alone
 # alternative: mean difference is greater than zero (contradiction rating for positive TC > negative TC)
-wilcox.test(df$value[df$group == 'positive'], df$value[df$group == 'negative'], alternative = 'greater')
-# between CI and SE alone
-# alternative: mean difference is less than zero (contradiction rating for CI < SE)
-wilcox.test(df$value[df$group == 'CI'], df$value[df$group == 'SE'], alternative = 'less')
-# semantic entailment, for which average cancellability ratings should be significantly above the midpoint
-t.test(df$value[df$group == 'SE'], alternative = "greater", mu = median(1:9))
-# conversational implicatures, for which average cancellability ratings should be significantly below the midpoint
-t.test(df$value[df$group == 'CI'], alternative = "less", mu = median(1:9))
+# ATT
+wilcox.test(att$value[att$.group == 'positive'], att$value[att$.group == 'negative'], alternative = 'less', paired = T, p.adjust.method = "BH")
+# BEH
+wilcox.test(beh$value[beh$.group == 'positive'], beh$value[beh$.group == 'negative'], alternative = 'less', paired = T, p.adjust.method = "BH")
+
+## Planned Contrasts based on ANOVA of a linear mixed mode
+# ATT
+fit_att <- lmer(value ~ .group + (1|id), data=att)
+anova(fit_att)
+emmeans(fit_att, specs = pairwise ~ .group, at = list(.group = c("positive", "negative")))
+# BEH
+fit_beh <- lmer(value ~ .group + (1|id), data=beh)
+anova(fit_beh)
+emmeans(fit_beh, specs = pairwise ~ .group, at = list(.group = c("positive", "negative")))
