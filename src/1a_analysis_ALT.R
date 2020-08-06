@@ -13,13 +13,18 @@ getwd()
 load('../res/sentiWords-db.RDS')
 
 ## import data
-df <- read.csv('../input/TC+Cognition+Exp+1a_Preregistered_July+22,+2020_06.47.csv', stringsAsFactors = F)
+df <- read.csv('../input/TC+Cognition+Exp+1a_Preregistered_July+22,+2020_09.55.csv', stringsAsFactors = F)
 df <- df[-c(1:2),]
 df <- as_tibble(df)
 
+
+
 ## clean and format data
+dfx <- df[,grepl('^FL_55', names(df), perl = T)]
 df <- df[,grepl('Eval|^CI|^SE(?!=A)', names(df), perl = T)]
+dfx <- mutate(dfx, id = 1:nrow(dfx))
 df <- mutate(df, id = 1:nrow(df))
+dfx <- melt(dfx, id.vars = 'id', value.name = 'item_order')
 df <- melt(df, id.vars = 'id', variable.name = 'item')
 df <- mutate(df, value = as.numeric(value))
 df <- mutate(df, item = gsub('SEA|Eval', '', item))
@@ -36,7 +41,33 @@ df <- mutate(df, item = tolower(gsub('^SE(\\.)?|^CI', '', item, perl = T)))
 table(df$item)
 df <- left_join(df, toks)
 df <- mutate(df, group = ifelse(is.na(group), annot, group))
-df <- select(df, - annot, - id)
+dfx <- filter(dfx, !item_order=='')
+dfx <- select(dfx, -variable)
+df <- left_join(df, dfx)
+#df <- select(df, - annot, - id)
+dfx <- str_split(df$item_order, '\\|') %>% 
+  do.call(rbind, .) %>%
+  as_tibble %>% 
+  mutate(id = df$id) %>% 
+  melt(., id.vars = 'id', value.name = 'item', variable.name = 'item_step') %>% 
+  as_tibble %>% 
+  mutate(item = tolower(gsub('^CI|^SE(A|\\.)?', '', item, perl =T)))
+df <- mutate(df, 
+       item_order = sapply(str_split(item_order, '\\|'), function(x) return(x[1])),
+       item_order = tolower(gsub('^CI|^SE(A|\\.)?', '', item_order, perl =T)))
+df <- left_join(df, dfx) %>% filter(!(duplicated(id)&duplicated(item)))
+df <- mutate(df, item_step = as.numeric(gsub('V', '', item_step)))
+
+ggplot(df, aes(x=as.factor(item_step), y=value, fill=group)) +
+  #geom_point() +
+  #geom_smooth()
+  geom_boxplot() +
+  facet_wrap(~group) +
+  labs(
+    title = 'How the participants answered from one item to another within their block',
+    x='Item Step'
+  )
+#df <- filter(df, item==item_order)
 check <- df %>% group_by(item, group) %>% summarise(n=n()) %>% arrange(group, item)
 check
 sum(check$n) == nrow(df)
@@ -65,7 +96,7 @@ p <- ggplot(df, aes(x = item, y = value, fill = group)) +
     axis.text.x = element_text(angle = 45, hjust = 1)
   )
 p
-ggsave(p, filename = '../output/plots/1a_boxplot_item.png', width = 11, height = 6)
+ggsave(p, filename = '../output/plots/1a_boxplot_item_firstonly.png', width = 11, height = 6)
 
 
 means <- df %>% group_by(group) %>% summarise(avg = mean(value, na.rm = T))
@@ -85,7 +116,7 @@ p <- ggplot(df, aes(x = group, y = value, fill = group)) +
     axis.text.x = element_text(angle = 45, hjust = 1)
   )
 p
-ggsave(p, filename = '../output/plots/1a_boxplot_group.png', width = 6, height = 6)
+ggsave(p, filename = '../output/plots/1a_boxplot_group_firstonly.png', width = 6, height = 6)
 
 
 ## create alternative sample with removed outliers

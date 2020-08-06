@@ -1,6 +1,6 @@
-# Analysis 1a
+# Analysis 1a RERUN
 
-All the code is in `src/1a_analysis.R`.
+All the code is in `src/1a_RERUN_analysis.R`.
 
 ## Hypotheses
 - H1: There is a significant difference between TNC (thick negative concepts) and TPC (thick positive concepts), such that Contradiction ratings are higher for TNC than for TPC.
