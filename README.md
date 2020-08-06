@@ -39,7 +39,7 @@ This means that the cancellability ratings are not normally distributed. The sam
 ## Hypothesis testing
 **Disclaimer: There were no outliers in the overall distribution. Conseuqently outlier-subsetting was not necessary.**
 
-### H1_ATT & H1_BEH
+### H1_ATT & H1_BEH: two- and one-tailed
 
 For H1_ATT and H1_BEH we performed planned contrasts between TNC and TPC based on a mixed model which includes the subject ID as random effect (= within-subject design) as well as controlling for item order (additional random effect). Since we are interested in the contrasts between different TC polarities (pos. - neg.) by item description (ATT / BEH), the mixed model is based on the following formula:
 
@@ -49,7 +49,7 @@ value ~ group*polarity + (1|id) + (1|item_step)
 
 where group is the item description (ATT / BEH) and polarity codes for TNC and TPC, and `(1|id)` is the random effect for the within-subjects design and `(1|item_step)` controls for the order effect.
 
-These are the results:
+These are the results for the two-tailed hypothesis:
 
 ```
 group = ATT:
@@ -77,15 +77,32 @@ group = BEH:
 Degrees-of-freedom method: kenward-roger
 ```
 
+Both our main hypotheses are formulated as one-tailed hypotheses, so that TPC < TNC, on average. To test this we simply use the left-tailed p-values:
+
+```
+group = ATT:
+ contrast            estimate    SE  df t.ratio p.value plus     minus    midpt
+ positive - negative   -0.501 0.297 362 -1.687  0.0462  positive negative   1.5
+ positive - negative   -0.501 0.297 362 -1.687  0.0462  negative positive   1.5
+
+group = BEH:
+ contrast            estimate    SE  df t.ratio p.value plus     minus    midpt
+ positive - negative   -0.690 0.298 365 -2.313  0.0106  positive negative   1.5
+ positive - negative   -0.690 0.298 365 -2.313  0.0106  negative positive   1.5
+
+Degrees-of-freedom method: kenward-roger
+P values are left-tailed
+```
+
 **H1_ATT**:
-For H1_ATT, the difference in group means between TNC and TPC show that TNC (6.77) have a higher mean than TPC (6.27). The difference (0.501), however, is not significant. Consequently, H1_ATT has to be rejected.
+For H1_ATT, the difference in group means between TNC and TPC show that TNC (6.77) have a higher mean than TPC (6.27). The difference (0.501) is not significant on the two-tailed approach. Our directed hypothesis, however, i.e. TPC < TNC, cannot be rejected, since the left-tailed p-value of 0.0462 is significant. Consequently, H1_ATT cannot be rejected.
 
 **H1_BEH**:
-For H1_BEH, the difference in group means between TNC and TPC also show that TNC (6.62) have a higher mean than TPC (5.93). In contrast to the ATT-group, the difference within the BEH-group (0.690) is indeed significant. Thus, H1_BEH cannot be rejected.
+For H1_BEH, the difference in group means between TNC and TPC also show that TNC (6.62) have a higher mean than TPC (5.93). In contrast to the ATT-group, the difference within the BEH-group (0.690) is indeed significant for the two-tailed test. The one-tailed test is also significant, so that we cannot reject TPC < TNC. Thus, H1_BEH cannot be rejected.
 
 **Pooled data**:
 
-For the pooled data we also see significantly higher contradiction ratings for TNC (6.69) than for TPC (6.10).
+For the pooled data we also see significantly higher contradiction ratings for TNC (6.69) than for TPC (6.10) in the two-sided test:
 
 ```
  polarity emmean    SE   df lower.CL upper.CL
@@ -100,6 +117,16 @@ $contrasts
  negative - positive    0.596 0.21 365 2.838   0.0048
 
 Degrees-of-freedom method: kenward-roger
+```
+
+For the one-sided test we can halve the p-values accordingly:
+```
+contrast            estimate   SE  df t.ratio p.value plus     minus    midpt
+positive - negative   -0.596 0.21 365 -2.838  0.0024  positive negative   1.5
+positive - negative   -0.596 0.21 365 -2.838  0.0024  negative positive   1.5
+
+Degrees-of-freedom method: kenward-roger
+P values are left-tailed
 ```
 
 

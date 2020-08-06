@@ -150,11 +150,16 @@ fit_att <- lmer(value ~ group*polarity + (1|id) + (1|item_step), data=dfsub)
 summary(fit_att)
 anova(fit_att)
 emmeans(fit_att, specs = pairwise ~ polarity, at = list(.group = c("positive", "negative")), by = 'group')
+emm <- emmeans(fit_att, specs = pairwise ~ polarity, at = list(.group = c("positive", "negative")), by = 'group')
+emm <- pwpp(emm$emmeans, method = "trt.vs.ctrl1", type = "response", side = "<")
+emm$data
+str(emm)
 # pooled data
 fit_att <- lmer(value ~ polarity + (1|id) + (1|item_step), data=dfsub)
 anova(fit_att)
-emmeans(fit_att, specs = pairwise ~ polarity, at = list(.group = c("positive", "negative")))
-
+emm <-  emmeans(fit_att, specs = pairwise ~ polarity, at = list(.group = c("positive", "negative")))
+emm <- pwpp(emm$emmeans, method = "trt.vs.ctrl1", type = "response", side = "<")
+emm$data
 
 ### H_aux1 & H_aux2
 # alternative: mean difference is less than zero (contradiction rating for CI < SE)
