@@ -124,7 +124,7 @@ p <- ggplot(df_aggr, aes(x = group, y = value)) +
     axis.text.x = element_text(angle = 45, hjust = 1)
   )
 p
-ggsave(p, filename = '../output/plots/1a_RERUN_boxplot_group.png', width = 6, height = 6)
+ggsave(p, filename = '../output/plots/1a_RERUN_boxplot_group.png', width = 11, height = 6)
 
 
 ## create alternative sample with removed outliers
@@ -135,7 +135,7 @@ outliers
 # homogeneity of variances
 levene.test(df$value, df$group, location = 'mean', trim.alpha=0.25, correction.method = 'correction.factor')
 # normality
-# per group
+# per groupp
 lapply(unique(df$group), function(x){shapiro.test(df$value[df$group==x])}) %>% setNames(., unique(df$group))
 # global
 shapiro.test(df$value)
