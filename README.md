@@ -15,7 +15,7 @@ These are the distributions of cancellability ratings per item:
 ![per item](/output/plots/1a_RERUN_boxplot_item.png)
 
 And aggregated per item group and polarity:
-![per item](/output/plots/1a_boxplot_group.png)
+![per item](/output/plots/1a_RERUN_boxplot_group.png)
 
 We already see that the group means between pooled TPC and TNC are most probably significant.
 
