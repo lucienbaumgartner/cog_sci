@@ -1,0 +1,78 @@
+---
+title: 'Cognition Paper: Ex. 2: Intensity Ratings'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo=F, include=F, message=F}
+require(multcomp)
+require(nlme)
+require(rstatix)
+library(dplyr)
+
+load('../output/data/2-intensity-ratings.RDS')
+df <- rename(df, valence = polarity,
+             questionValence = questionPol)
+```
+
+# Hypothesis
+
+- $H_0$: We hypothesize that there is no difference between thick positive and thick negative thick terms for our two dependent variables.
+    - $\mu_{behaviour}[pos]-\mu_{bevahiour}[neg]=0$
+    - $\mu_{sentence}[pos]-\mu_{sentence}[neg]=0$
+    
+Since we work with mixed-measures ANOVA, we use our two DVs (question:behaviour, question:sentence) as a between-subject IV in interaction with valence, which will be a within-subject variable.
+
+# Testing
+
+### ANOVA assumptions
+
+The assumption of homogeneity of variance of the between-subject factor (question) was checked using the Levene’s test. The test is performed at each level of valence variable. The assumption is not violated, since none of the results are significant on a .01-alpha level.
+
+```{r}
+df %>%
+  dplyr::group_by(valence) %>%
+  rstatix::levene_test(value ~ question)
+```
+
+The data is not normally distributed, on neither of the interaction levels. Thus, the assumption is violated. Since the assumption of homogeneity of variance still holds, we can still use parametric methods and proceed with our mixed-measure ANOVA.
+
+```{r}
+df %>%
+  dplyr::group_by(valence, question) %>%
+  dplyr::summarise(statistic = shapiro.test(value)$statistic,
+            p.value = shapiro.test(value)$p.value)
+```
+
+
+### The Hypothesis
+
+- Global 2x2 mixed-measure ANOVA:
+    - Y: agreement value
+    - within-subject variable: valence ($=id/valence; ..:=\{\text{positive, negative}\}$)
+    - between-subject variable: question ($:\{\text{behaviour, sentence}\}$)
+
+In order to test our hypothesis, we use the model specified above. The results are shown below.
+
+```{r}
+summary(aov(value ~ question*valence + Error(id/valence), data=df))
+```
+
+As we can see, valence is significant on .01-alpha level, i.e. the means of positive and negative thick terms differ significantly. \underline{\textbf{Thus, we have to reject our hypothesis.}} The interaction `question*valence` is not significant, on the other hand. This means that valence has a significant effect across the two levels of the between-subject variable.
+
+In order to have a more detailed estimate of our effect, we performed a post-hoc test (Tukey's HSD with Bonferroni-correction) for pairwise contrasts. Note that `question*valence` has been combined into a single interaction variable, i.e. `questionPol`, since the `multcomp::glht`-function cannot handle the traditional formula. The Tukey Contrasts show that the valence effect within each of the questions:
+
+- sentence.negative - sentence.positive == 0 
+- behaviour.negative - behaviour.positive == 0 
+
+This means that within both DVs (question:behaviour, question:sentence) the valence effect is significant.
+
+```{r}
+m1 <- nlme::lme(value ~ questionValence, random = ~ 1 | id, method="ML", data=df)
+summary(multcomp::glht(m1, linfct = multcomp::mcp(questionValence = "Tukey")), 
+        test = adjusted(type = "bonferroni"))
+```
+

@@ -1,0 +1,251 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q0_Consent,Vicious,Reckless,Virtuous,Generous,Friendly,manipulative,Courageous,Honest,Compassionate,Cruel,Selfish,Rude,Vicious2,reckl2,Gen2,Cour 2,Cruel2,Friend2,Rude2,Self2,Virt2,Hon2,Comp2,Manip2,Gender,Lang,Age,FL_404_DO,FL_498_DO,FL_497_DO
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Research Informed Consent
+ 
+ 
+
+  
+
+ Purpose:
+
+ We are conducting a research study to examine people’s ordinary intuitions about how they use words in their everyday life.
+
+  
+
+ Procedures:
+
+ Participation in this study will involve filling out a brief questionnaire.  We anticipate that your involvement will require around 5 minutes.  You must be at least 18 years old to participate. 
+
+  
+
+ Risks and Benefits:
+This research will not benefit you directly, but we
+ hope that our results will add to scientific knowledge about people’s 
+ordinary intuitions about morality. 
+
+  
+
+ Confidentiality:
+
+ All of your responses will be anonymous.  
+
+  
+
+ Voluntary Participation:
+
+ Participation in this study is completely voluntary.  You
+ are free to decline to participate, to end participation at any time 
+for any reason.
+
+  
+
+ Questions:
+
+ If you have any questions about this study, you may contact the 
+investigator, Pascale Willemsen, by sending an email to 
+Pascale.Willemsen@philos.uzh.ch
+
+
+
+  
+
+  
+
+  
+
+  Do you voluntarily consent to participate in this study?",How bad is it if a person's behavior is vicious?,How bad is it if a person's behavior is reckless?,How good is it if a person's behavior is virtuous?,How good is it if a person's behavior is generous?,How good is it if a person's behavior is friendly?,How bad is it if a person's behavior is manipulative?,How good is it if a person's behavior is courageous?,How good is it if a person's behavior is honest?,How good is it if a person's behavior is compassionate?,How bad is it if a person's behavior is cruel?,How bad is it if a person's behavior is selfish?,How bad is it if a person's behavior is rude?,"Suppose that Sally said the following thing about Tom:
+ 
+
+""What Tom did was vicious."" 
+
+ 
+
+How negative is this statement about Tom?","Suppose that Sally said the following thing about Tom:
+ 
+
+""What Tom did was reckless."" 
+
+ 
+
+How negative is this statement about Tom?","Suppose that Sally said the following thing about Tom:
+ 
+
+""What Tom did was generous.""
+
+ 
+
+How positive is this statement about Tom?","Suppose that Sally said the following thing about Tom:
+ 
+
+""What Tom did was courageous.""
+
+ 
+
+How positive is this statement about Tom?","Suppose that Sally said the following thing about Tom:
+ 
+
+""What Tom did was cruel."" 
+
+ 
+
+How negative is this statement about Tom?","Suppose that Sally said the following thing about Tom:
+ 
+
+""What Tom did was friendly.""
+
+ 
+
+How positive is this statement about Tom?","Suppose that Sally said the following thing about Tom:
+ 
+
+""What Tom did was rude."" 
+
+ 
+
+How negative is this statement about Tom?","Suppose that Sally said the following thing about Tom:
+ 
+
+""What Tom did was selfish."" 
+
+ 
+
+How negative is this statement about Tom?","Suppose that Sally said the following thing about Tom:
+ 
+
+""What Tom did was virtuous.""
+
+ 
+
+How positive is this statement about Tom?","Suppose that Sally said the following thing about Tom:
+ 
+
+""What Tom did was honest.""
+
+ 
+
+How positive is this statement about Tom?","Suppose that Sally said the following thing about Tom:
+ 
+
+""What Tom did was compassionate.""
+
+ 
+
+How positive is this statement about Tom?","Suppose that Sally said the following thing about Tom:
+ 
+
+""What Tom did was manipulative."" 
+
+ 
+
+How negative is this statement about Tom?",Please tell us with which gender you identify,What is your native language?,How old are you?,FL_404 - Block Randomizer - Display Order,FL_498 - Block Randomizer - Display Order,FL_497 - Block Randomizer - Display Order
+"{""ImportId"":""startDate"",""timeZone"":""Europe/Berlin""}","{""ImportId"":""endDate"",""timeZone"":""Europe/Berlin""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""Europe/Berlin""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID1""}","{""ImportId"":""QID765""}","{""ImportId"":""QID764""}","{""ImportId"":""QID763""}","{""ImportId"":""QID748""}","{""ImportId"":""QID746""}","{""ImportId"":""QID755""}","{""ImportId"":""QID658""}","{""ImportId"":""QID750""}","{""ImportId"":""QID762""}","{""ImportId"":""QID758""}","{""ImportId"":""QID760""}","{""ImportId"":""QID753""}","{""ImportId"":""QID776""}","{""ImportId"":""QID775""}","{""ImportId"":""QID766""}","{""ImportId"":""QID744""}","{""ImportId"":""QID773""}","{""ImportId"":""QID767""}","{""ImportId"":""QID771""}","{""ImportId"":""QID772""}","{""ImportId"":""QID770""}","{""ImportId"":""QID768""}","{""ImportId"":""QID769""}","{""ImportId"":""QID774""}","{""ImportId"":""QID224""}","{""ImportId"":""QID225_TEXT""}","{""ImportId"":""QID226_TEXT""}","{""ImportId"":""FL_404_DO""}","{""ImportId"":""FL_498_DO""}","{""ImportId"":""FL_497_DO""}"
+2020-04-03 14:19:47,2020-04-03 14:24:01,1,,100,253,1,2020-04-03 14:24:02,R_1pGoimcqlu2SA7K,,,,,47.36639404296875,8.554595947265625,preview,EN,1,8,2,8,6,5,7,3,6,6,10,2,4,,,,,,,,,,,,,1,French,29,FL_498,Generous|Reckless|Friendly|Honest|Vicious|Compassionate|Rude|Courageous|manipulative|Cruel|Selfish|Virtuous,
+2020-04-03 14:24:06,2020-04-03 14:25:59,1,,100,112,1,2020-04-03 14:25:59,R_pE3nnvUJIG1yIHn,,,,,47.36639404296875,8.554595947265625,preview,EN,1,,,,,,,,,,,,,8,3,6,6,10,5,5,3,6,6,7,8,1,German,20,FL_497,,Rude2|Reckless2|Selfish2|Compassionate2|Cruel2|Virtuous2|Generous2|Honest2|Vicious2|Friendly2|Manipulative2|Courageous2
+2020-04-03 16:23:04,2020-04-03 16:24:00,0,24.113.232.44,100,56,1,2020-04-03 16:24:01,R_1pDyXindbwuuEGP,,,,,47.6620941162109375,-122.6981048583984375,anonymous,EN,1,,,,,,,,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,1,english,48,FL_497,,Compassionate2|Courageous2|Generous2|Virtuous2|Reckless2|Friendly2|Cruel2|Rude2|Honest2|Manipulative2|Selfish2|Vicious2
+2020-04-03 16:23:03,2020-04-03 16:24:02,0,99.155.202.109,100,59,1,2020-04-03 16:24:02,R_1161pPBrmn8Eqf7,,,,,33.1555023193359375,-96.49810028076171875,anonymous,EN,1,8,8,7,7,6,10,5,7,7,8,7,3,,,,,,,,,,,,,2,ENGLISH,44,FL_498,Honest|Friendly|Rude|Vicious|Selfish|Virtuous|manipulative|Cruel|Courageous|Compassionate|Generous|Reckless,
+2020-04-03 16:23:19,2020-04-03 16:24:06,0,128.92.70.35,100,46,1,2020-04-03 16:24:06,R_1hR1MDXtbcHwHTZ,,,,,34.8950042724609375,-81.92040252685546875,anonymous,EN,1,,,,,,,,,,,,,10,8,8,8,10,7,7,7,8,7,8,8,1,English,32,FL_497,,Manipulative2|Honest2|Generous2|Cruel2|Selfish2|Courageous2|Compassionate2|Vicious2|Virtuous2|Friendly2|Rude2|Reckless2
+2020-04-03 16:23:12,2020-04-03 16:24:15,0,66.172.203.23,100,63,1,2020-04-03 16:24:15,R_1LvP60540c2vEtz,,,,,41.8939971923828125,-94.68000030517578125,anonymous,EN,1,8,10,10,10,10,7,10,10,10,7,7,10,,,,,,,,,,,,,2,English,38,FL_498,Vicious|Honest|Generous|Selfish|Friendly|Rude|Courageous|Cruel|Virtuous|Compassionate|Reckless|manipulative,
+2020-04-03 16:23:14,2020-04-03 16:24:15,0,73.240.82.174,100,61,1,2020-04-03 16:24:16,R_2Ezq3wY8IRSj4iU,,,,,44.592803955078125,-123.27459716796875,anonymous,EN,1,10,8,8,8,7,8,7,7,10,10,7,5,,,,,,,,,,,,,1,English,33,FL_498,Reckless|Compassionate|Courageous|Cruel|Rude|Generous|Vicious|Virtuous|Honest|Friendly|manipulative|Selfish,
+2020-04-03 16:23:10,2020-04-03 16:24:16,0,74.222.120.31,100,65,1,2020-04-03 16:24:16,R_31sBdTG7x4nZ484,,,,,33.913299560546875,-80.35870361328125,anonymous,EN,1,,,,,,,,,,,,,8,7,10,10,8,10,8,8,10,10,10,7,1,English,30,FL_497,,Vicious2|Manipulative2|Friendly2|Cruel2|Courageous2|Compassionate2|Virtuous2|Reckless2|Rude2|Generous2|Selfish2|Honest2
+2020-04-03 16:23:22,2020-04-03 16:24:16,0,168.67.1.19,100,54,1,2020-04-03 16:24:17,R_3HMFLSHcHLZgz27,,,,,38.352294921875,-75.53859710693359375,anonymous,EN,1,6,5,10,10,10,4,6,10,10,10,6,5,,,,,,,,,,,,,2,ENGLISH,33,FL_498,Honest|Rude|Selfish|Friendly|Reckless|Courageous|Compassionate|manipulative|Vicious|Cruel|Generous|Virtuous,
+2020-04-03 16:23:09,2020-04-03 16:24:28,0,98.244.33.107,100,79,1,2020-04-03 16:24:28,R_1FhrY9XRRCh6Ku8,,,,,38.6157073974609375,-121.5052947998046875,anonymous,EN,1,,,,,,,,,,,,,8,7,10,7,8,8,10,8,10,8,8,7,1,ENGLISH,25,FL_497,,Cruel2|Vicious2|Manipulative2|Selfish2|Rude2|Reckless2|Compassionate2|Generous2|Courageous2|Honest2|Virtuous2|Friendly2
+2020-04-03 16:23:33,2020-04-03 16:24:28,0,65.188.179.223,100,55,1,2020-04-03 16:24:29,R_O9Jl15jOCShXygh,,,,,36.1053009033203125,-79.87619781494140625,anonymous,EN,1,7,6,7,7,8,7,8,7,8,8,6,6,,,,,,,,,,,,,2,english,22,FL_498,Reckless|Virtuous|Generous|Compassionate|Honest|Courageous|Rude|Vicious|Friendly|manipulative|Cruel|Selfish,
+2020-04-03 16:23:09,2020-04-03 16:24:39,0,69.204.64.37,100,89,1,2020-04-03 16:24:40,R_2xQ8rblkpFeGGcN,,,,,43.050506591796875,-78.852996826171875,anonymous,EN,1,10,7,8,10,8,8,7,10,10,10,8,8,,,,,,,,,,,,,1,English,35,FL_498,Courageous|Selfish|manipulative|Generous|Reckless|Vicious|Friendly|Rude|Virtuous|Honest|Cruel|Compassionate,
+2020-04-03 16:23:06,2020-04-03 16:24:40,0,107.77.230.211,100,93,1,2020-04-03 16:24:40,R_vMN23Hfl2DnNBAt,,,,,34.0543975830078125,-118.2440032958984375,anonymous,EN,1,10,8,10,10,8,8,10,10,10,10,7,7,,,,,,,,,,,,,2,english,37,FL_498,Selfish|Vicious|Generous|Courageous|manipulative|Honest|Virtuous|Friendly|Cruel|Rude|Reckless|Compassionate,
+2020-04-03 16:23:02,2020-04-03 16:24:41,0,98.4.142.152,100,99,1,2020-04-03 16:24:42,R_3k0bAk00B0Wjm5U,,,,,44.82269287109375,-68.80010223388671875,anonymous,EN,1,,,,,,,,,,,,,10,7,10,10,10,10,10,10,10,10,10,10,2,English,30,FL_497,,Compassionate2|Rude2|Courageous2|Friendly2|Reckless2|Manipulative2|Generous2|Virtuous2|Vicious2|Honest2|Selfish2|Cruel2
+2020-04-03 16:23:38,2020-04-03 16:24:43,0,74.70.123.6,100,65,1,2020-04-03 16:24:44,R_1Q0AVgN0d453srQ,,,,,42.727294921875,-73.6696014404296875,anonymous,EN,1,,,,,,,,,,,,,7,8,7,8,2,3,6,4,10,10,8,2,2,english,28,FL_497,,Reckless2|Vicious2|Rude2|Honest2|Courageous2|Cruel2|Generous2|Manipulative2|Virtuous2|Selfish2|Compassionate2|Friendly2
+2020-04-03 16:24:01,2020-04-03 16:24:54,0,71.182.225.191,100,53,1,2020-04-03 16:24:54,R_YWG7zsX4U5fJS6Z,,,,,40.56719970703125,-79.97080230712890625,anonymous,EN,1,10,10,10,10,10,10,10,10,10,10,10,10,,,,,,,,,,,,,1,english,56,FL_498,Honest|Cruel|Vicious|Virtuous|Compassionate|Rude|Selfish|Reckless|Courageous|Friendly|manipulative|Generous,
+2020-04-03 16:23:11,2020-04-03 16:24:55,0,73.79.138.233,100,104,1,2020-04-03 16:24:55,R_vHXruH5IowYhh3X,,,,,40.4441986083984375,-79.9557037353515625,anonymous,EN,1,,,,,,,,,,,,,10,7,7,8,10,7,7,10,10,8,10,8,2,English,30,FL_497,,Vicious2|Cruel2|Selfish2|Compassionate2|Rude2|Reckless2|Virtuous2|Generous2|Manipulative2|Courageous2|Friendly2|Honest2
+2020-04-03 16:23:34,2020-04-03 16:25:00,0,73.236.40.189,100,85,1,2020-04-03 16:25:00,R_1dhS9wSyNfzNXyw,,,,,40.9958038330078125,-80.3264007568359375,anonymous,EN,1,10,7,10,8,8,8,10,8,10,10,7,7,,,,,,,,,,,,,1,English,60,FL_498,Selfish|manipulative|Reckless|Vicious|Friendly|Cruel|Rude|Courageous|Generous|Virtuous|Honest|Compassionate,
+2020-04-03 16:23:04,2020-04-03 16:25:03,0,47.24.5.170,100,119,1,2020-04-03 16:25:04,R_1o0bwtxBdP5CjPy,,,,,32.6255950927734375,-97.36319732666015625,anonymous,EN,1,,,,,,,,,,,,,10,8,10,8,10,8,10,10,10,10,10,10,2,English,65,FL_497,,Manipulative2|Cruel2|Rude2|Vicious2|Reckless2|Courageous2|Compassionate2|Virtuous2|Honest2|Selfish2|Generous2|Friendly2
+2020-04-03 16:24:22,2020-04-03 16:25:06,0,68.116.212.195,100,43,1,2020-04-03 16:25:07,R_9nRHhBp4tvC63wl,,,,,30.5435943603515625,-89.68959808349609375,anonymous,EN,1,7,8,8,10,6,7,6,10,8,7,10,7,,,,,,,,,,,,,1,English,33,FL_498,Generous|Reckless|Rude|Selfish|Courageous|Vicious|Honest|Virtuous|manipulative|Friendly|Cruel|Compassionate,
+2020-04-03 16:23:17,2020-04-03 16:25:06,0,209.6.37.86,100,109,1,2020-04-03 16:25:07,R_2cdCy8a8S1TxIwo,,,,,42.39959716796875,-71.124603271484375,anonymous,EN,1,10,6,7,10,8,2,7,10,8,8,7,7,,,,,,,,,,,,,1,english,26,FL_498,Friendly|Virtuous|manipulative|Selfish|Courageous|Honest|Cruel|Reckless|Compassionate|Generous|Vicious|Rude,
+2020-04-03 16:23:07,2020-04-03 16:25:08,0,72.95.213.245,100,121,1,2020-04-03 16:25:09,R_3RaQ87ZJILspbVW,,,,,40.3964996337890625,-80.04419708251953125,anonymous,EN,1,,,,,,,,,,,,,10,8,10,7,10,7,6,8,10,10,10,7,1,english,55,FL_497,,Manipulative2|Reckless2|Rude2|Virtuous2|Honest2|Compassionate2|Generous2|Vicious2|Cruel2|Friendly2|Courageous2|Selfish2
+2020-04-03 16:23:28,2020-04-03 16:25:08,0,99.42.41.84,100,100,1,2020-04-03 16:25:09,R_3nUchRS8GphaEtL,,,,,30.0735931396484375,-95.62030029296875,anonymous,EN,1,,,,,,,,,,,,,10,10,10,10,10,10,7,10,10,10,10,10,1,English,35,FL_497,,Honest2|Courageous2|Vicious2|Manipulative2|Cruel2|Reckless2|Virtuous2|Selfish2|Rude2|Friendly2|Generous2|Compassionate2
+2020-04-03 16:23:27,2020-04-03 16:25:08,0,162.198.201.8,100,101,1,2020-04-03 16:25:09,R_1OCfIjifMiVtk7b,,,,,35.91510009765625,-79.097198486328125,anonymous,EN,1,8,8,8,8,8,8,8,7,8,8,7,7,,,,,,,,,,,,,1,english,44,FL_498,Reckless|Virtuous|Friendly|Generous|Cruel|Selfish|Honest|Courageous|Vicious|manipulative|Rude|Compassionate,
+2020-04-03 16:23:45,2020-04-03 16:25:09,0,96.242.215.8,100,83,1,2020-04-03 16:25:09,R_SCppR61qUFVDM1X,,,,,40.8125,-74.21340179443359375,anonymous,EN,1,,,,,,,,,,,,,10,7,8,8,10,7,8,6,10,7,10,6,1,English,30,FL_497,,Manipulative2|Honest2|Compassionate2|Reckless2|Selfish2|Courageous2|Cruel2|Friendly2|Generous2|Virtuous2|Vicious2|Rude2
+2020-04-03 16:23:09,2020-04-03 16:25:15,0,72.185.178.123,100,125,1,2020-04-03 16:25:16,R_1DGRwguAwYT6oB8,,,,,28.2136993408203125,-82.68090057373046875,anonymous,EN,1,7,6,8,7,8,6,10,10,5,2,4,3,,,,,,,,,,,,,1,English,32,FL_498,Friendly|Honest|manipulative|Vicious|Courageous|Generous|Virtuous|Reckless|Selfish|Compassionate|Cruel|Rude,
+2020-04-03 16:23:50,2020-04-03 16:25:17,0,24.11.185.76,100,87,1,2020-04-03 16:25:17,R_3Q01ZWKr9FO23WJ,,,,,32.7147064208984375,-79.95259857177734375,anonymous,EN,1,,,,,,,,,,,,,1,10,6,6,8,3,1,6,3,2,3,2,1,english,28,FL_497,,Cruel2|Selfish2|Generous2|Friendly2|Virtuous2|Vicious2|Compassionate2|Courageous2|Honest2|Rude2|Manipulative2|Reckless2
+2020-04-03 16:23:27,2020-04-03 16:25:27,0,73.6.116.64,100,120,1,2020-04-03 16:25:28,R_1eVsCas63xi28TS,,,,,29.7805023193359375,-95.51290130615234375,anonymous,EN,1,5,7,7,10,10,4,6,7,7,3,4,2,,,,,,,,,,,,,1,english,30,FL_498,Reckless|Courageous|Vicious|Generous|Cruel|Selfish|Compassionate|Rude|Honest|Friendly|manipulative|Virtuous,
+2020-04-03 16:23:57,2020-04-03 16:25:28,0,67.85.220.169,100,91,1,2020-04-03 16:25:29,R_1rcqvI3EZC0vTlg,,,,,40.5977935791015625,-74.00009918212890625,anonymous,EN,1,,,,,,,,,,,,,2,3,6,7,2,8,3,3,7,8,7,5,1,Chinese,28,FL_497,,Selfish2|Reckless2|Generous2|Manipulative2|Compassionate2|Honest2|Courageous2|Virtuous2|Friendly2|Vicious2|Cruel2|Rude2
+2020-04-03 16:24:48,2020-04-03 16:25:32,0,71.233.222.1,100,44,1,2020-04-03 16:25:32,R_p6kg7NCbDuaOXVD,,,,,42.456695556640625,-71.37470245361328125,anonymous,EN,1,10,10,10,10,10,7,10,10,10,10,5,8,,,,,,,,,,,,,2,English,23,FL_498,Rude|Friendly|Compassionate|Reckless|Virtuous|Courageous|manipulative|Generous|Honest|Cruel|Vicious|Selfish,
+2020-04-03 16:24:49,2020-04-03 16:25:34,0,205.178.67.43,100,45,1,2020-04-03 16:25:34,R_2w7bIPHQLymWeFP,,,,,41.9031982421875,-87.63829803466796875,anonymous,EN,1,10,7,7,7,7,8,8,6,7,10,8,6,,,,,,,,,,,,,2,English,26,FL_498,Friendly|Cruel|Selfish|Honest|manipulative|Reckless|Vicious|Rude|Courageous|Generous|Compassionate|Virtuous,
+2020-04-03 16:24:33,2020-04-03 16:25:35,0,70.142.206.241,100,61,1,2020-04-03 16:25:35,R_1eEmBmLDxTeutFm,,,,,32.925994873046875,-96.9665985107421875,anonymous,EN,1,10,10,10,10,10,10,10,10,10,10,10,10,,,,,,,,,,,,,2,English,38,FL_498,Honest|Rude|Friendly|Compassionate|Virtuous|Generous|Courageous|manipulative|Cruel|Selfish|Vicious|Reckless,
+2020-04-03 16:23:10,2020-04-03 16:25:40,0,70.178.78.204,100,150,1,2020-04-03 16:25:40,R_1ImXXJflVFcDiVH,,,,,36.3372955322265625,-94.0998992919921875,anonymous,EN,1,,,,,,,,,,,,,7,6,6,8,4,6,5,4,6,6,7,7,1,English,30,FL_497,,Cruel2|Friendly2|Selfish2|Rude2|Reckless2|Virtuous2|Honest2|Manipulative2|Vicious2|Generous2|Courageous2|Compassionate2
+2020-04-03 16:24:31,2020-04-03 16:25:45,0,73.152.56.226,100,74,1,2020-04-03 16:25:46,R_1E1ecCgOgyvLyP4,,,,,37.5146942138671875,-77.5034027099609375,anonymous,EN,1,7,7,1,1,1,10,1,1,1,10,5,5,,,,,,,,,,,,,1,english,33,FL_498,Reckless|Cruel|manipulative|Generous|Vicious|Virtuous|Rude|Courageous|Selfish|Friendly|Compassionate|Honest,
+2020-04-03 16:23:31,2020-04-03 16:25:48,0,5.62.57.33,100,136,1,2020-04-03 16:25:48,R_1rNup4cv3eNGv0g,,,,,47.6092071533203125,-122.3314056396484375,anonymous,EN,1,,,,,,,,,,,,,10,10,10,10,10,10,10,10,10,10,10,10,1,English,44,FL_497,,Generous2|Selfish2|Manipulative2|Friendly2|Reckless2|Vicious2|Cruel2|Courageous2|Virtuous2|Compassionate2|Rude2|Honest2
+2020-04-03 16:23:54,2020-04-03 16:25:53,0,174.250.20.4,100,119,1,2020-04-03 16:25:53,R_BVzwd3t72VstSEN,,,,,37.751007080078125,-97.82199859619140625,anonymous,EN,1,,,,,,,,,,,,,8,5,7,8,8,8,7,7,7,6,7,8,1,English,41,FL_497,,Courageous2|Virtuous2|Rude2|Manipulative2|Generous2|Friendly2|Honest2|Selfish2|Reckless2|Compassionate2|Vicious2|Cruel2
+2020-04-03 16:24:26,2020-04-03 16:26:08,0,170.54.118.141,100,102,1,2020-04-03 16:26:09,R_3hydAcHjPvBJNLA,,,,,41.6750030517578125,-93.70159912109375,anonymous,EN,1,,,,,,,,,,,,,10,10,10,10,10,10,10,10,10,10,10,10,2,English,49,FL_497,,Friendly2|Reckless2|Compassionate2|Courageous2|Cruel2|Generous2|Vicious2|Manipulative2|Honest2|Virtuous2|Selfish2|Rude2
+2020-04-03 16:24:33,2020-04-03 16:26:09,0,173.217.113.124,100,96,1,2020-04-03 16:26:09,R_2ZNZqwZyskD8Pyk,,,,,31.7577972412109375,-93.09079742431640625,anonymous,EN,1,,,,,,,,,,,,,1,1,10,10,1,10,1,1,10,10,10,1,2,english,66,FL_497,,Honest2|Rude2|Courageous2|Manipulative2|Reckless2|Compassionate2|Generous2|Virtuous2|Vicious2|Cruel2|Friendly2|Selfish2
+2020-04-03 16:24:38,2020-04-03 16:26:11,0,68.35.59.188,100,93,1,2020-04-03 16:26:11,R_DD0T6lp2QD79rrP,,,,,34.756103515625,-87.630401611328125,anonymous,EN,1,3,4,5,7,8,2,6,6,8,2,4,3,,,,,,,,,,,,,1,English,38,FL_498,Courageous|Selfish|Friendly|Virtuous|Compassionate|Rude|manipulative|Honest|Cruel|Generous|Reckless|Vicious,
+2020-04-03 16:23:12,2020-04-03 16:26:17,0,96.58.142.231,100,184,1,2020-04-03 16:26:18,R_3P7XsHssNSoqrgT,,,,,27.7888946533203125,-82.71920013427734375,anonymous,EN,1,8,7,7,7,7,8,7,8,8,8,6,8,,,,,,,,,,,,,1,english,33,FL_498,Courageous|Compassionate|Generous|Cruel|manipulative|Honest|Reckless|Rude|Friendly|Vicious|Virtuous|Selfish,
+2020-04-03 16:23:19,2020-04-03 16:26:19,0,68.194.130.223,100,179,1,2020-04-03 16:26:20,R_3CSxzB4aPBHMOhX,,,,,40.697296142578125,-73.3271026611328125,anonymous,EN,1,1,1,6,10,10,1,8,10,10,1,10,1,,,,,,,,,,,,,1,English,28,FL_498,Virtuous|Honest|Reckless|Generous|manipulative|Courageous|Vicious|Friendly|Rude|Cruel|Compassionate|Selfish,
+2020-04-03 16:25:05,2020-04-03 16:26:28,0,24.144.190.162,100,82,1,2020-04-03 16:26:28,R_12roVro10tH3FTb,,,,,41.03680419921875,-82.21720123291015625,anonymous,EN,1,10,10,8,7,6,10,7,10,7,10,10,10,,,,,,,,,,,,,2,English,24,FL_498,Rude|Compassionate|Vicious|Virtuous|Honest|Cruel|Friendly|Generous|Selfish|Reckless|manipulative|Courageous,
+2020-04-03 16:24:59,2020-04-03 16:26:40,0,98.255.239.86,100,100,1,2020-04-03 16:26:40,R_2q3soZipCP6rArT,,,,,37.3256988525390625,-120.49990081787109375,anonymous,EN,1,,,,,,,,,,,,,7,7,7,8,7,6,4,6,8,7,6,6,1,English,37,FL_497,,Friendly2|Vicious2|Honest2|Compassionate2|Selfish2|Cruel2|Reckless2|Manipulative2|Courageous2|Virtuous2|Rude2|Generous2
+2020-04-03 16:23:07,2020-04-03 16:26:42,0,174.49.21.130,100,214,1,2020-04-03 16:26:42,R_pRWFInz9xlGk19v,,,,,35.9698028564453125,-86.506103515625,anonymous,EN,1,6,6,7,7,6,7,7,6,8,7,6,7,,,,,,,,,,,,,1,English,37,FL_498,Reckless|Honest|Virtuous|Generous|Compassionate|Friendly|Cruel|Courageous|Vicious|Selfish|manipulative|Rude,
+2020-04-03 16:23:40,2020-04-03 16:26:55,0,185.232.22.220,100,194,1,2020-04-03 16:26:56,R_3iwqmHLp7bHJjaK,,,,,40.7156982421875,-74,anonymous,EN,1,,,,,,,,,,,,,6,4,2,3,1,8,7,4,5,4,10,1,1,English,50,FL_497,,Rude2|Virtuous2|Vicious2|Friendly2|Selfish2|Honest2|Manipulative2|Reckless2|Cruel2|Generous2|Compassionate2|Courageous2
+2020-04-03 16:25:53,2020-04-03 16:27:18,0,74.134.75.252,100,84,1,2020-04-03 16:27:18,R_26aPbiyRZSAcZbJ,,,,,38.0012054443359375,-84.532501220703125,anonymous,EN,1,,,,,,,,,,,,,10,10,7,10,7,6,7,8,10,6,10,8,2,English,38,FL_497,,Cruel2|Honest2|Reckless2|Selfish2|Virtuous2|Vicious2|Generous2|Friendly2|Rude2|Manipulative2|Compassionate2|Courageous2
+2020-04-03 16:26:04,2020-04-03 16:27:21,0,76.241.41.169,100,76,1,2020-04-03 16:27:21,R_1DFFGFxN4WQ2Cxw,,,,,34.7075958251953125,-92.46600341796875,anonymous,EN,1,10,8,10,10,10,7,6,7,8,10,6,7,,,,,,,,,,,,,1,English,30,FL_498,Virtuous|Compassionate|Friendly|Rude|manipulative|Honest|Reckless|Selfish|Courageous|Vicious|Generous|Cruel,
+2020-04-03 16:27:07,2020-04-03 16:27:51,0,73.247.43.78,100,43,1,2020-04-03 16:27:51,R_3qKGJTp0excEdgq,,,,,42.36669921875,-88.092498779296875,anonymous,EN,1,10,10,10,7,7,10,10,7,8,8,7,6,,,,,,,,,,,,,1,English,33,FL_498,Cruel|Rude|Friendly|Virtuous|manipulative|Selfish|Reckless|Vicious|Courageous|Compassionate|Honest|Generous,
+2020-04-03 16:25:55,2020-04-03 16:27:54,0,50.0.206.223,100,119,1,2020-04-03 16:27:55,R_1QKsoHW7wieldxy,,,,,37.8921966552734375,-122.2729034423828125,anonymous,EN,1,,,,,,,,,,,,,7,8,10,10,10,8,8,7,10,10,10,7,1,English,56,FL_497,,Vicious2|Selfish2|Courageous2|Virtuous2|Friendly2|Reckless2|Compassionate2|Manipulative2|Generous2|Cruel2|Honest2|Rude2
+2020-04-03 16:23:24,2020-04-03 16:27:58,0,98.115.106.192,100,273,1,2020-04-03 16:27:58,R_1rujTPcJzE0FIVI,,,,,40.0442962646484375,-75.6472015380859375,anonymous,EN,1,,,,,,,,,,,,,8,5,8,4,3,7,8,7,7,7,6,7,1,english,25,FL_497,,Manipulative2|Rude2|Courageous2|Selfish2|Cruel2|Reckless2|Virtuous2|Vicious2|Compassionate2|Friendly2|Generous2|Honest2
+2020-04-03 16:25:31,2020-04-03 16:27:59,0,104.131.92.125,100,148,1,2020-04-03 16:28:00,R_2ZBPBScMJqZIUfb,,,,,40.836395263671875,-74.14029693603515625,anonymous,EN,1,10,7,7,7,10,4,7,6,5,6,7,6,,,,,,,,,,,,,2,English,30,FL_498,Virtuous|Selfish|Compassionate|Reckless|manipulative|Generous|Honest|Vicious|Courageous|Cruel|Rude|Friendly,
+2020-04-03 16:27:02,2020-04-03 16:28:15,0,73.173.103.253,100,72,1,2020-04-03 16:28:16,R_yNLwMcPzCJbqtrP,,,,,39.21240234375,-76.87760162353515625,anonymous,EN,1,10,10,10,10,8,10,10,8,10,10,7,7,,,,,,,,,,,,,1,English,26,FL_498,Selfish|Friendly|Vicious|Courageous|Cruel|Compassionate|Rude|Virtuous|Honest|manipulative|Generous|Reckless,
+2020-04-03 16:23:17,2020-04-03 16:28:34,0,70.113.64.2,100,316,1,2020-04-03 16:28:52,R_2TZQAtSPIkBwB6W,,,,,30.2660980224609375,-97.71360015869140625,anonymous,EN,1,10,7,4,6,3,5,3,7,5,6,7,8,,,,,,,,,,,,,1,English,36,FL_498,Generous|manipulative|Reckless|Virtuous|Courageous|Selfish|Compassionate|Rude|Cruel|Vicious|Friendly|Honest,
+2020-04-03 16:28:00,2020-04-03 16:28:57,0,98.0.33.85,100,57,1,2020-04-03 16:28:57,R_1IhHhiDVwh8M4DI,,,,,43.6016998291015625,-70.2353973388671875,anonymous,EN,1,10,10,10,7,5,8,10,8,6,10,8,7,,,,,,,,,,,,,2,English,32,FL_498,Selfish|Generous|Friendly|Courageous|Reckless|Virtuous|Rude|Honest|Compassionate|Vicious|manipulative|Cruel,
+2020-04-03 16:27:54,2020-04-03 16:29:01,0,68.63.20.188,100,66,1,2020-04-03 16:29:02,R_2rMe2PjnVZYvfhe,,,,,30.4907989501953125,-84.31580352783203125,anonymous,EN,1,,,,,,,,,,,,,10,6,7,7,10,5,4,8,10,5,8,7,1,english,37,FL_497,,Courageous2|Compassionate2|Virtuous2|Vicious2|Reckless2|Friendly2|Generous2|Rude2|Manipulative2|Selfish2|Cruel2|Honest2
+2020-04-03 16:26:32,2020-04-03 16:29:09,0,172.220.227.49,100,156,1,2020-04-03 16:29:09,R_2wbkidrvVOms7lT,,,,,35.4665985107421875,-79.1757965087890625,anonymous,EN,1,10,7,8,10,10,10,10,8,10,10,7,7,,,,,,,,,,,,,2,English,26,FL_498,Friendly|manipulative|Courageous|Cruel|Rude|Honest|Virtuous|Reckless|Selfish|Vicious|Compassionate|Generous,
+2020-04-03 16:27:03,2020-04-03 16:29:09,0,69.144.114.159,100,125,1,2020-04-03 16:29:09,R_3PjE4fk22z8XbCU,,,,,42.8430938720703125,-106.3130035400390625,anonymous,EN,1,4,8,8,8,8,8,8,8,7,6,8,8,,,,,,,,,,,,,2,English,46,FL_498,Virtuous|Compassionate|Courageous|Selfish|Reckless|Rude|Generous|Honest|Friendly|manipulative|Cruel|Vicious,
+2020-04-03 16:27:36,2020-04-03 16:29:09,0,73.25.149.154,100,93,1,2020-04-03 16:29:10,R_2coRVl6ypgL2jSX,,,,,45.6652069091796875,-122.5214996337890625,anonymous,EN,1,,,,,,,,,,,,,10,6,10,10,10,7,8,10,10,7,10,8,1,English,36,FL_497,,Virtuous2|Honest2|Vicious2|Generous2|Compassionate2|Manipulative2|Rude2|Reckless2|Cruel2|Friendly2|Selfish2|Courageous2
+2020-04-03 16:27:30,2020-04-03 16:29:24,0,68.60.158.123,100,113,1,2020-04-03 16:29:24,R_3kLDEDw5CjsP62t,,,,,42.72869873046875,-83.02790069580078125,anonymous,EN,1,8,6,8,7,8,2,6,10,8,6,6,6,,,,,,,,,,,,,2,English,36,FL_498,Friendly|manipulative|Virtuous|Honest|Vicious|Courageous|Selfish|Rude|Reckless|Generous|Cruel|Compassionate,
+2020-04-03 16:26:46,2020-04-03 16:29:30,0,47.153.169.185,100,163,1,2020-04-03 16:29:30,R_2uxqC9KFRhc1HDs,,,,,33.6598052978515625,-117.3484954833984375,anonymous,EN,1,,,,,,,,,,,,,10,10,5,4,10,1,10,10,7,1,10,1,1,English,34,FL_497,,Cruel2|Vicious2|Rude2|Friendly2|Manipulative2|Generous2|Courageous2|Selfish2|Reckless2|Honest2|Virtuous2|Compassionate2
+2020-04-03 16:28:43,2020-04-03 16:29:37,0,24.208.188.198,100,54,1,2020-04-03 16:29:38,R_qXG6tAEaxEO2USJ,,,,,40.7415924072265625,-84.15219879150390625,anonymous,EN,1,,,,,,,,,,,,,10,6,8,7,10,6,10,8,10,7,10,10,1,english,39,FL_497,,Generous2|Compassionate2|Selfish2|Virtuous2|Honest2|Rude2|Manipulative2|Vicious2|Reckless2|Friendly2|Courageous2|Cruel2
+2020-04-03 16:28:51,2020-04-03 16:29:44,0,73.73.187.59,100,52,1,2020-04-03 16:29:45,R_oXM03257LoavXQ5,,,,,41.8032989501953125,-87.9282989501953125,anonymous,EN,1,,,,,,,,,,,,,10,7,10,8,10,8,10,8,8,10,8,8,1,English,33,FL_497,,Honest2|Friendly2|Cruel2|Compassionate2|Reckless2|Courageous2|Rude2|Vicious2|Manipulative2|Virtuous2|Generous2|Selfish2
+2020-04-03 16:27:59,2020-04-03 16:30:01,0,205.169.57.77,100,122,1,2020-04-03 16:30:20,R_12RxjiN7LOpSefy,,,,,28.575897216796875,-81.39569854736328125,anonymous,EN,1,8,6,5,6,6,3,3,5,5,6,5,8,,,,,,,,,,,,,2,english,45,FL_498,Rude|Vicious|manipulative|Courageous|Cruel|Virtuous|Generous|Reckless|Compassionate|Friendly|Honest|Selfish,
+2020-04-03 16:29:33,2020-04-03 16:30:35,0,207.191.102.62,100,62,1,2020-04-03 16:30:35,R_Ry4aCnpqLlxTVBv,,,,,30.200897216796875,-93.44370269775390625,anonymous,EN,1,,,,,,,,,,,,,7,4,2,2,7,1,7,6,8,1,7,7,1,english,28,FL_497,,Reckless2|Vicious2|Selfish2|Rude2|Courageous2|Generous2|Honest2|Friendly2|Compassionate2|Manipulative2|Virtuous2|Cruel2
+2020-04-03 16:27:05,2020-04-03 16:30:52,0,74.69.214.161,100,227,1,2020-04-03 16:30:53,R_ZwAWLlw7xWRbVp7,,,,,42.67010498046875,-73.77539825439453125,anonymous,EN,1,,,,,,,,,,,,,3,4,7,8,2,7,2,2,7,8,8,3,1,ENGLISH,39,FL_497,,Compassionate2|Courageous2|Rude2|Cruel2|Virtuous2|Manipulative2|Selfish2|Reckless2|Honest2|Vicious2|Friendly2|Generous2
+2020-04-03 16:25:20,2020-04-03 16:30:54,0,191.96.97.58,100,334,1,2020-04-03 16:30:54,R_uamwhqCV9uHICDn,,,,,41.848297119140625,-87.651702880859375,anonymous,EN,1,,,,,,,,,,,,,7,7,7,7,7,7,6,7,7,7,7,7,1,English,29,FL_497,,Rude2|Compassionate2|Honest2|Virtuous2|Generous2|Reckless2|Courageous2|Friendly2|Selfish2|Cruel2|Vicious2|Manipulative2
+2020-04-03 16:29:56,2020-04-03 16:30:55,0,160.3.43.65,100,59,1,2020-04-03 16:30:56,R_1f7wfli3MIgdoDM,,,,,30.3574066162109375,-89.1649017333984375,anonymous,EN,1,,,,,,,,,,,,,10,8,10,10,10,10,10,10,10,10,8,10,2,English,31,FL_497,,Selfish2|Honest2|Virtuous2|Friendly2|Rude2|Cruel2|Manipulative2|Courageous2|Generous2|Vicious2|Compassionate2|Reckless2
+2020-04-03 16:29:25,2020-04-03 16:31:40,0,107.137.132.222,100,135,1,2020-04-03 16:31:41,R_26lq6l9wZFq0sqm,,,,,29.8834075927734375,-95.45529937744140625,anonymous,EN,1,8,8,7,8,8,8,8,8,8,8,8,8,,,,,,,,,,,,,1,English,31,FL_498,Generous|Virtuous|Selfish|Honest|Reckless|Cruel|Compassionate|manipulative|Vicious|Courageous|Rude|Friendly,
+2020-04-03 16:26:37,2020-04-03 16:31:49,0,23.80.158.92,100,311,1,2020-04-03 16:31:49,R_1n3pqrO3Cc7jvr2,,,,,34.072906494140625,-118.2606048583984375,anonymous,EN,1,4,4,6,4,3,3,5,4,2,3,3,2,,,,,,,,,,,,,1,ENGLISH,40,FL_498,Virtuous|Vicious|Generous|Friendly|Compassionate|Honest|Cruel|Selfish|Reckless|Rude|manipulative|Courageous,
+2020-04-03 16:30:54,2020-04-03 16:32:15,0,108.41.104.169,100,80,1,2020-04-03 16:32:15,R_27f0IZBiok2RbPJ,,,,,40.62860107421875,-73.93900299072265625,anonymous,EN,1,10,6,7,10,8,7,10,8,10,10,5,5,,,,,,,,,,,,,2,English,58,FL_498,Rude|Selfish|Reckless|Friendly|Generous|Virtuous|manipulative|Courageous|Cruel|Vicious|Honest|Compassionate,
+2020-04-03 16:31:49,2020-04-03 16:32:33,0,76.180.67.64,100,44,1,2020-04-03 16:32:33,R_1Ebx6mzth6jaNJF,,,,,42.9297027587890625,-78.74340057373046875,anonymous,EN,1,,,,,,,,,,,,,10,6,1,8,10,7,7,8,10,8,7,10,1,English,31,FL_497,,Selfish2|Vicious2|Cruel2|Reckless2|Rude2|Manipulative2|Generous2|Virtuous2|Honest2|Courageous2|Friendly2|Compassionate2
+2020-04-03 16:28:41,2020-04-03 16:33:19,0,72.218.236.226,100,277,1,2020-04-03 16:33:19,R_wLGep9uYhYyJ0Jj,,,,,36.9456024169921875,-76.253997802734375,anonymous,EN,1,,,,,,,,,,,,,10,10,10,10,10,10,10,10,10,10,10,10,1,English,47,FL_497,,Compassionate2|Rude2|Reckless2|Honest2|Courageous2|Generous2|Manipulative2|Vicious2|Cruel2|Friendly2|Virtuous2|Selfish2
+2020-04-03 16:32:24,2020-04-03 16:34:05,0,66.177.19.190,100,101,1,2020-04-03 16:34:06,R_czHszcH3vv9IPJL,,,,,30.2183074951171875,-81.562103271484375,anonymous,EN,1,10,5,10,10,10,10,10,10,10,10,5,10,,,,,,,,,,,,,2,English,34,FL_498,Vicious|Cruel|Selfish|Honest|Compassionate|Courageous|Reckless|Rude|Friendly|manipulative|Generous|Virtuous,
+2020-04-03 16:32:58,2020-04-03 16:34:16,0,66.28.225.178,100,78,1,2020-04-03 16:34:31,R_3LXAYflse8n5Z07,,,,,32.8242034912109375,-96.750701904296875,anonymous,EN,1,10,10,10,10,10,10,10,10,10,10,10,10,,,,,,,,,,,,,1,english,27,FL_498,Vicious|Virtuous|Rude|Honest|Courageous|Selfish|Compassionate|Reckless|Cruel|Friendly|manipulative|Generous,
+2020-04-03 16:34:30,2020-04-03 16:35:21,0,74.109.232.242,100,51,1,2020-04-03 16:35:21,R_248iM0BU5NeyIVs,,,,,40.37750244140625,-79.9613037109375,anonymous,EN,1,,,,,,,,,,,,,10,10,10,10,10,10,10,10,10,10,10,10,1,English,27,FL_497,,Friendly2|Courageous2|Selfish2|Honest2|Vicious2|Reckless2|Compassionate2|Cruel2|Rude2|Manipulative2|Virtuous2|Generous2
+2020-04-03 16:32:56,2020-04-03 16:36:09,0,173.242.129.193,100,193,1,2020-04-03 16:36:10,R_3oTSZn6TrFED4zs,,,,,37.8589019775390625,-86.00689697265625,anonymous,EN,1,,,,,,,,,,,,,8,6,7,6,8,10,7,10,8,8,8,8,1,english,39,FL_497,,Compassionate2|Reckless2|Honest2|Selfish2|Cruel2|Generous2|Courageous2|Friendly2|Manipulative2|Rude2|Vicious2|Virtuous2
+2020-04-03 16:39:21,2020-04-03 16:40:17,0,73.4.69.5,100,56,1,2020-04-03 16:40:18,R_qK0ljHSWk1Fzj7r,,,,,41.3571014404296875,-72.93340301513671875,anonymous,EN,1,10,5,7,8,7,7,5,10,10,10,10,6,,,,,,,,,,,,,2,English,25,FL_498,Rude|Vicious|Selfish|Honest|Generous|Cruel|manipulative|Compassionate|Courageous|Virtuous|Reckless|Friendly,
+2020-04-03 16:39:16,2020-04-03 16:40:33,0,76.210.185.217,100,76,1,2020-04-03 16:40:44,R_2bJpf17Uvjq9VrG,,,,,30.5088958740234375,-97.67960357666015625,anonymous,EN,1,10,10,8,6,10,7,7,8,10,10,5,7,,,,,,,,,,,,,2,English,51,FL_498,manipulative|Virtuous|Selfish|Honest|Rude|Vicious|Generous|Friendly|Compassionate|Cruel|Reckless|Courageous,
+2020-04-03 16:39:13,2020-04-03 16:40:46,0,71.15.43.52,100,92,1,2020-04-03 16:40:46,R_ZxlPbzbrs5QCkKd,,,,,30.2790985107421875,-89.7678985595703125,anonymous,EN,1,8,10,8,10,8,10,8,10,10,8,8,8,,,,,,,,,,,,,1,ENGLISH,32,FL_498,Cruel|Rude|Generous|Compassionate|Selfish|Vicious|Reckless|Friendly|Honest|Virtuous|manipulative|Courageous,
+2020-04-03 16:38:51,2020-04-03 16:40:52,0,24.3.219.146,100,120,1,2020-04-03 16:40:52,R_2bIV2zCTuHIRUYU,,,,,40.305206298828125,-79.54180145263671875,anonymous,EN,1,10,8,10,10,8,8,10,10,7,10,5,6,,,,,,,,,,,,,1,English,38,FL_498,Courageous|manipulative|Compassionate|Virtuous|Generous|Reckless|Cruel|Honest|Rude|Friendly|Vicious|Selfish,
+2020-04-03 16:39:16,2020-04-03 16:41:02,0,47.148.255.73,100,106,1,2020-04-03 16:41:12,R_1q4ogftFUy71lft,,,,,33.8058929443359375,-117.3466033935546875,anonymous,EN,1,,,,,,,,,,,,,7,8,10,7,8,6,10,7,10,8,10,7,1,united states,48,FL_497,,Virtuous2|Honest2|Vicious2|Friendly2|Generous2|Cruel2|Manipulative2|Rude2|Reckless2|Courageous2|Compassionate2|Selfish2
+2020-04-03 16:38:47,2020-04-03 16:41:14,0,104.206.206.115,100,147,1,2020-04-03 16:41:15,R_3nk0qyjjI9mBx9v,,,,,40.711395263671875,-74.0005035400390625,anonymous,EN,1,,,,,,,,,,,,,8,3,7,7,7,8,3,2,5,7,8,2,1,English,54,FL_497,,Cruel2|Vicious2|Friendly2|Compassionate2|Honest2|Selfish2|Virtuous2|Courageous2|Manipulative2|Reckless2|Rude2|Generous2
+2020-04-03 16:41:08,2020-04-03 16:42:02,0,97.83.61.32,100,54,1,2020-04-03 16:42:14,R_33kXAH2Gpce12Ax,,,,,42.8123016357421875,-86.14209747314453125,anonymous,EN,1,,,,,,,,,,,,,10,8,10,10,10,7,7,10,10,10,10,10,1,English,38,FL_497,,Virtuous2|Reckless2|Compassionate2|Selfish2|Vicious2|Generous2|Cruel2|Rude2|Friendly2|Courageous2|Manipulative2|Honest2
+2020-04-03 16:41:10,2020-04-03 16:42:18,0,174.103.84.133,100,67,1,2020-04-03 16:42:18,R_3fUb0jmP1zYJJk4,,,,,38.473602294921875,-82.64129638671875,anonymous,EN,1,,,,,,,,,,,,,1,2,8,8,1,10,3,2,8,8,8,3,1,English,35,FL_497,,Friendly2|Reckless2|Selfish2|Vicious2|Compassionate2|Cruel2|Generous2|Courageous2|Manipulative2|Rude2|Virtuous2|Honest2
+2020-04-03 16:41:06,2020-04-03 16:42:22,0,24.127.162.43,100,76,1,2020-04-03 16:42:23,R_1qfcEjcHe9oMXfs,,,,,42.6829986572265625,-83.38800048828125,anonymous,EN,1,,,,,,,,,,,,,10,7,8,8,10,7,7,8,10,8,8,8,2,English,39,FL_497,,Generous2|Rude2|Honest2|Virtuous2|Courageous2|Reckless2|Manipulative2|Cruel2|Compassionate2|Friendly2|Vicious2|Selfish2
+2020-04-03 16:40:56,2020-04-03 16:42:37,0,65.110.122.0,100,100,1,2020-04-03 16:42:48,R_9stdV0BrUcMW6xH,,,,,41.70050048828125,-79.03479766845703125,anonymous,EN,1,,,,,,,,,,,,,8,7,10,10,8,10,7,8,10,10,10,7,1,ENGLISH,56,FL_497,,Virtuous2|Selfish2|Compassionate2|Rude2|Honest2|Vicious2|Friendly2|Cruel2|Manipulative2|Courageous2|Reckless2|Generous2
+2020-04-03 16:41:06,2020-04-03 16:42:56,0,172.251.245.187,100,110,1,2020-04-03 16:42:56,R_vf3kQtXDo3Jaqe5,,,,,33.4947967529296875,-117.09539794921875,anonymous,EN,1,10,7,7,10,8,10,10,10,8,10,7,10,,,,,,,,,,,,,1,English,40,FL_498,Friendly|Vicious|Selfish|Rude|Honest|Cruel|Virtuous|Courageous|Compassionate|manipulative|Generous|Reckless,
+2020-04-03 16:41:31,2020-04-03 16:42:58,0,47.186.199.9,100,86,1,2020-04-03 16:43:20,R_2VshxO4Q211cM9N,,,,,33.2274932861328125,-97.1277008056640625,anonymous,EN,1,6,6,7,7,6,10,8,10,7,7,7,7,,,,,,,,,,,,,1,English,21,FL_498,Honest|Cruel|Reckless|Selfish|Virtuous|Rude|Courageous|Friendly|Generous|Compassionate|Vicious|manipulative,
+2020-04-03 16:41:12,2020-04-03 16:43:02,0,24.3.219.146,100,109,1,2020-04-03 16:43:20,R_2aho2Thp9PKhnLk,,,,,40.305206298828125,-79.54180145263671875,anonymous,EN,1,8,5,10,10,10,8,10,10,8,10,7,7,,,,,,,,,,,,,2,English,34,FL_498,Reckless|Virtuous|Generous|Honest|Rude|Friendly|Selfish|Vicious|Cruel|Compassionate|Courageous|manipulative,
+2020-04-03 16:39:16,2020-04-03 16:43:39,0,198.181.163.107,100,262,1,2020-04-03 16:43:49,R_3KW9U1Hhr9q2nGV,,,,,37.751007080078125,-97.82199859619140625,anonymous,EN,1,10,8,7,10,6,6,7,8,8,7,7,6,,,,,,,,,,,,,1,English,43,FL_498,Selfish|Compassionate|Virtuous|Vicious|Cruel|Friendly|Honest|manipulative|Reckless|Rude|Courageous|Generous,
+2020-04-03 16:23:10,2020-04-03 16:44:57,0,66.31.48.108,100,1307,1,2020-04-03 16:44:58,R_3dxw0JpJ2gtYLQJ,,,,,42.4149932861328125,-71.05269622802734375,anonymous,EN,1,,,,,,,,,,,,,7,7,7,10,4,7,7,8,8,7,8,6,2,English,27,FL_497,,Compassionate2|Manipulative2|Virtuous2|Generous2|Honest2|Cruel2|Courageous2|Friendly2|Rude2|Selfish2|Vicious2|Reckless2
+2020-04-03 16:44:28,2020-04-03 16:45:42,0,72.238.205.220,100,73,1,2020-04-03 16:45:48,R_1kIbUXUmCuG1lbQ,,,,,28.7115020751953125,-81.51349639892578125,anonymous,EN,1,,,,,,,,,,,,,10,10,10,10,10,10,10,10,10,10,10,10,2,English,41,FL_497,,Selfish2|Friendly2|Courageous2|Generous2|Cruel2|Vicious2|Virtuous2|Reckless2|Rude2|Compassionate2|Manipulative2|Honest2
+2020-04-03 16:44:23,2020-04-03 16:45:52,0,181.215.87.141,100,89,1,2020-04-03 16:45:52,R_3FRMiYdsZcz3OSM,,,,,41.871002197265625,-87.62889862060546875,anonymous,EN,1,7,8,8,10,6,7,8,10,7,8,8,7,,,,,,,,,,,,,1,English,25,FL_498,Friendly|manipulative|Virtuous|Courageous|Reckless|Honest|Rude|Generous|Compassionate|Selfish|Vicious|Cruel,
+2020-04-03 16:44:30,2020-04-03 16:45:52,0,172.111.198.87,100,82,1,2020-04-03 16:45:52,R_1OjdS5H1XFe0S8s,,,,,25.7740936279296875,-80.18170166015625,anonymous,EN,1,10,8,10,10,10,10,10,10,10,10,7,8,,,,,,,,,,,,,2,English,36,FL_498,Generous|Courageous|Compassionate|Selfish|Honest|Rude|Vicious|Virtuous|Cruel|Friendly|Reckless|manipulative,
+2020-04-03 16:44:09,2020-04-03 16:46:47,0,73.129.210.81,100,158,1,2020-04-03 16:46:49,R_2vle9cCD6oS3pDW,,,,,39.3361053466796875,-76.53890228271484375,anonymous,EN,1,,,,,,,,,,,,,10,7,7,8,8,7,7,8,7,8,8,10,1,English,30,FL_497,,Courageous2|Selfish2|Compassionate2|Friendly2|Honest2|Rude2|Vicious2|Cruel2|Manipulative2|Reckless2|Virtuous2|Generous2
+2020-04-03 16:48:19,2020-04-03 16:50:41,0,12.48.217.26,100,142,1,2020-04-03 16:50:42,R_3nCaiVhepe9pLPj,,,,,33.7837982177734375,-84.44550323486328125,anonymous,EN,1,,,,,,,,,,,,,8,6,8,8,8,8,10,8,10,7,7,7,1,english,47,FL_497,,Selfish2|Vicious2|Manipulative2|Honest2|Friendly2|Generous2|Virtuous2|Cruel2|Courageous2|Rude2|Compassionate2|Reckless2
+2020-04-03 16:49:42,2020-04-03 16:50:49,0,66.56.183.159,100,66,1,2020-04-03 16:50:49,R_3PXmk1fhIvEtpfy,,,,,33.9875030517578125,-81.00250244140625,anonymous,EN,1,,,,,,,,,,,,,10,6,10,10,7,10,7,6,8,10,10,10,1,English,22,FL_497,,Friendly2|Honest2|Manipulative2|Reckless2|Virtuous2|Selfish2|Courageous2|Vicious2|Generous2|Cruel2|Rude2|Compassionate2
+2020-04-03 16:49:25,2020-04-03 16:54:16,0,161.129.70.12,100,290,1,2020-04-03 16:54:17,R_1ilIw9ob0thM2WD,,,,,33.7552947998046875,-84.38860321044921875,anonymous,EN,1,8,6,10,10,10,6,10,10,10,8,6,6,,,,,,,,,,,,,2,English,32,FL_498,Vicious|Reckless|Honest|Cruel|Selfish|Rude|Friendly|Courageous|Compassionate|manipulative|Generous|Virtuous,
+2020-04-03 16:53:44,2020-04-03 16:56:57,0,170.244.145.45,100,193,1,2020-04-03 16:56:58,R_1gO6NnpvXpAvhFx,,,,,40.8491973876953125,-73.97350311279296875,anonymous,EN,1,10,7,5,7,5,8,6,7,5,6,5,4,,,,,,,,,,,,,1,english,28,FL_498,manipulative|Rude|Generous|Courageous|Virtuous|Cruel|Vicious|Compassionate|Honest|Friendly|Selfish|Reckless,
+2020-04-03 16:58:34,2020-04-03 17:01:19,0,108.250.206.38,100,165,1,2020-04-03 17:01:20,R_AMbltoW39nZMRLb,,,,,29.8639068603515625,-90.10669708251953125,anonymous,EN,1,,,,,,,,,,,,,10,8,10,10,10,10,10,10,10,10,10,7,1,English,57,FL_497,,Virtuous2|Manipulative2|Vicious2|Reckless2|Rude2|Cruel2|Courageous2|Friendly2|Generous2|Honest2|Selfish2|Compassionate2
+2020-04-03 16:28:36,2020-04-03 17:02:52,0,50.234.80.90,100,2056,1,2020-04-03 17:03:07,R_2w5NBJ1XrhT5bZf,,,,,39.2908935546875,-76.60959625244140625,anonymous,EN,1,7,4,7,4,6,6,4,7,2,7,6,3,,,,,,,,,,,,,1,English,24,FL_498,Generous|Rude|Virtuous|Vicious|Compassionate|Selfish|Friendly|manipulative|Reckless|Honest|Courageous|Cruel,
+2020-04-03 17:19:14,2020-04-03 17:21:53,0,68.12.27.188,100,158,1,2020-04-03 17:21:53,R_1DGpgjf1pREh5gY,,,,,35.5189056396484375,-97.535400390625,anonymous,EN,1,,,,,,,,,,,,,3,6,8,5,7,6,5,5,6,6,5,8,1,English,24,FL_497,,Vicious2|Honest2|Compassionate2|Manipulative2|Generous2|Courageous2|Virtuous2|Rude2|Selfish2|Cruel2|Friendly2|Reckless2
+2020-04-03 16:23:18,2020-04-03 16:23:34,0,71.77.253.184,55,15,0,2020-04-06 16:23:40,R_1DnVDLMu50kv28P,,,,,,,anonymous,EN,1,,,,,,,,,,,,,8,7,,,,,,7,,,,,,,,FL_497,,Selfish2|Reckless2|Vicious2|Generous2|Honest2|Rude2|Friendly2|Manipulative2|Cruel2|Courageous2|Virtuous2|Compassionate2
+2020-04-03 16:24:46,2020-04-03 16:25:32,0,47.33.210.132,68,46,0,2020-04-06 16:25:39,R_TmTetGd2zGIEeWJ,,,,,,,anonymous,EN,1,,8,10,10,10,,8,,10,,,3,,,,,,,,,,,,,,,,FL_498,Friendly|Rude|Reckless|Generous|Virtuous|Courageous|Compassionate|Honest|Selfish|manipulative|Vicious|Cruel,
+2020-04-03 16:23:54,2020-04-03 16:26:49,0,173.85.192.191,97,174,0,2020-04-06 16:27:03,R_2CB83nNDg1enMnz,,,,,,,anonymous,EN,1,,,,,,,,,,,,,5,7,8,6,6,6,7,6,8,5,8,8,2,english,48,FL_497,,Vicious2|Honest2|Reckless2|Cruel2|Virtuous2|Courageous2|Compassionate2|Rude2|Selfish2|Manipulative2|Generous2|Friendly2
+2020-04-03 16:26:51,2020-04-03 16:27:21,0,73.189.147.24,52,30,0,2020-04-06 16:27:42,R_2zhz98nyA7jaV1d,,,,,,,anonymous,EN,1,,,,,,,,,,,,,,,8,,,,,,,10,,,,,,FL_497,,Honest2|Generous2|Reckless2|Cruel2|Manipulative2|Selfish2|Rude2|Compassionate2|Friendly2|Vicious2|Courageous2|Virtuous2
+2020-04-03 16:27:06,2020-04-03 16:28:31,0,24.208.188.198,65,85,0,2020-04-06 16:28:36,R_dnHg1X6ebF8zzR7,,,,,,,anonymous,EN,1,,,,,,,,,,,,,,2,10,10,1,,1,,10,,,,,,,FL_497,,Courageous2|Cruel2|Rude2|Virtuous2|Generous2|Reckless2|Selfish2|Honest2|Friendly2|Vicious2|Manipulative2|Compassionate2
+2020-04-03 16:38:49,2020-04-03 16:39:08,0,174.233.64.146,45,19,0,2020-04-06 16:39:26,R_pMXV8ZYKmWog1xL,,,,,,,anonymous,EN,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,FL_497,,Reckless2|Selfish2|Friendly2|Cruel2|Virtuous2|Manipulative2|Vicious2|Compassionate2|Generous2|Courageous2|Rude2|Honest2
+2020-04-03 16:42:29,2020-04-03 16:44:13,0,172.111.198.87,55,104,0,2020-04-06 16:44:22,R_3LhXHqhlFOa8KMo,,,,,,,anonymous,EN,1,,8,,,,,,,,10,7,,,,,,,,,,,,,,,,,FL_498,Selfish|Cruel|Reckless|Courageous|Virtuous|Friendly|Honest|Compassionate|Generous|manipulative|Vicious|Rude,
+2020-07-07 20:10:29,2020-07-07 20:10:41,0,207.244.86.175,48,11,0,2020-07-10 22:46:37,R_2XaeJkRNsPeMxYm,,,,,,,anonymous,EN,1,,,,,,10,,,,,,,,,,,,,,,,,,,,,,FL_498,manipulative|Vicious|Cruel|Reckless|Compassionate|Honest|Rude|Selfish|Friendly|Virtuous|Generous|Courageous,
+2020-07-21 20:51:08,2020-07-21 20:51:17,0,108.62.116.184,45,9,0,2020-07-24 20:51:38,R_3kO4kXfIJWhtQhO,,,,,,,anonymous,EN,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,FL_498,Compassionate|Vicious|Selfish|manipulative|Friendly|Courageous|Virtuous|Reckless|Rude|Cruel|Honest|Generous,

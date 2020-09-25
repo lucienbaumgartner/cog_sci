@@ -109,7 +109,7 @@ kruskal.test(value ~ group, data = df)
 kruskal.test(value ~ group, data = df_ALT)
 # there are significant group differences, globally
 
-## Planned Contrasts using Pairwise Wilcoxon Rank Sum Tests
+## Planned Contrasts using Pairwise Wilcoxon Rank Sum Tests 
 # global version
 pairwise.wilcox.test(df$value, df$group, p.adjust.method = "BH")
 pairwise.wilcox.test(df_ALT$value, df_ALT$group, p.adjust.method = "BH")
